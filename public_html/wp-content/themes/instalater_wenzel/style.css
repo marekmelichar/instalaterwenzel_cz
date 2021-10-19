@@ -1,0 +1,573 @@
+/*
+Theme Name: Instalater Wenzel
+Theme URI: ...........
+Author: Marek Melichar
+Author URI: http://marekmelichar.cz
+Description: Theme for web marekmelichar.cz
+Version: 1
+*/
+
+a {
+  color: #3d3d3d;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 1.9em;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+
+.row {
+  width: 1080px;
+}
+
+header {
+  padding: 0.5em 0 1em 0;
+}
+
+header h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-weight: lighter;
+  margin: 3px 0 0 0;
+  text-align: center;
+}
+
+header h2 {
+  text-align: center;
+  margin: 0;
+  font-size: 10px;
+  font-weight: lighter;
+}
+
+.logo {
+  margin: 0 auto;
+  width: 69px;
+  height: 62px;
+  background-image: url(images/logo.png);
+  background-repeat: no-repeat;
+}
+
+
+
+.banner {
+  text-align: center;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.banner h1 {
+  font-size: 1.5em;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #f8f8f8;
+  padding: 4em 9em 0 9em;
+  margin: -5px 0 0 0;
+}
+
+.banner h2 {
+  font-size: 1.5em;
+  color: #f8f8f8;
+  text-align: center;
+  padding: 1.5em 8em 0 8em;
+}
+
+.banner .phone-icon {
+  font-size: 2em;
+  margin-right: 20px;
+}
+
+.btn {
+  padding: 10px 30px;
+  text-decoration: none;
+}
+
+.btn-default {
+  margin-top: 0.5em;
+  text-transform: uppercase;
+  color: #f8f8f8;
+  background-color: #384e6c;
+  border: 1px solid #384e6c;
+  font-size: 1.14em;
+  border-radius: 0.2em;
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+-moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+}
+
+/*.screens {
+  float: right;
+  margin-top: 2em;
+  width: 457px;
+  height: 311px;
+  background-image: url(images/screens.png);
+  background-repeat: no-repeat;
+}*/
+
+.offer-image {
+  float: right;
+  margin-top: 5em;
+}
+
+.offer-services,
+.offer-javascript-services {
+  position: relative;
+  z-index: 0;
+  margin-top: -5em;
+  padding-top: 8em;
+  padding-bottom: 4em;
+  background-color: #F8F8F8;
+}
+
+.offer-javascript-services {
+  z-index: -1;
+  background-color: #fff;
+}
+
+.offer-services ul,
+.offer-javascript-services ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.offer-services li,
+.offer-javascript-services li {
+  margin: 5px 0;
+}
+
+.offer-3-cols {
+  padding-top: 3em;
+  text-align: center;
+  color: #fff;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.offer-3-cols .icon-spanner,
+.offer-3-cols .icon-thermometer,
+.offer-3-cols .icon-flame {
+  font-size: 2.5em;
+}
+
+.offer-3-cols h2 {
+  font-size: 1.5em;
+}
+
+.offer-3-cols-text {
+  line-height: 1.5;
+}
+
+
+
+.other-args {
+  padding: 3em 0;
+  line-height: 1.5;
+}
+
+
+
+footer {
+  padding: 2em 0;
+  background: #f8f8f8;
+}
+
+footer .footer-menu {
+  margin-top: 1em;
+}
+
+footer .footer-menu-list {
+  list-style-type: none;
+}
+
+footer .footer-menu-list li {
+  display: inline-block;
+}
+
+footer .footer-menu-list li a {
+  margin: 0 1em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+footer .footer-menu-list .current_page_item a {
+  font-weight: bold;
+}
+
+footer .icon-facebook {
+  font-size: 2em;
+  color: #3C5A96;
+}
+
+footer .icon-facebook:hover {
+  color: #3d3d3d;
+}
+
+footer .footer-contact {
+  margin-top: 10px;
+  font-size: 1em;
+}
+
+footer .footer-contact .icon-phone {
+  font-size: 1.5em;
+  margin-right: 0.5em;
+}
+
+
+
+
+
+/*
+***** REFERENCE PAGE
+ */
+
+.reference-content {
+  padding: 2.5em 0;
+}
+
+.reference .gallery {
+  display: flex;
+  justify-content: space-between;
+}
+
+.reference .gallery figure {
+  float: left;
+}
+
+
+/*
+.browser {
+  float: left;
+  margin-top: 2em;
+  width: 336px;
+  height: 221px;
+  background-image: url(images/browser.png);
+  background-repeat: no-repeat;
+}
+
+.part-of-your-project {
+  height: 300px;
+  background-image: url(images/muzu_pomoci.png);
+  background-repeat: no-repeat;
+}
+
+.part-of-your-project h2 {
+  margin: 1.5em 0 0 0;
+}
+
+.part-of-your-project .icon {
+  margin-right: 0.5em;
+  font-size: 2em;
+  vertical-align: middle;
+}
+
+.part-of-your-project h3 {
+  margin-top: 0.75em;
+  font-weight: 300;
+  font-size: 18px;
+}*/
+
+/*footer {
+  padding: 1em 0;
+  color: #f8f8f8;
+  background-color: #384e6c;
+}
+
+footer .nav a {
+  font-weight: 300;
+  color: #f8f8f8;
+}
+
+footer .icon {
+  font-size: 2em;
+  margin-right: 1em;
+}
+
+footer a {
+  color: #f8f8f8;
+}
+
+footer a:hover {
+  color: #ccc;
+}
+
+footer .social {
+  padding-left: 3em;
+}*/
+
+
+
+/*
+*** FIXED HEADER
+*/
+
+.customize-support header.fixed {
+    top: 32px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+*** KONTAKT
+*/
+
+
+
+/* CONTACT FORM */
+
+.contact-page {
+  padding: 2.5em 0;
+}
+
+.contact-page .wpcf7 {
+  margin: 3em auto;
+  text-align: center;
+}
+
+.contact-page .wpcf7-form {
+  padding-top: 1em;
+  padding-bottom: 1em; 
+  /* background-image: url(images/contact-form.jpg); */
+  /* background-repeat: no-repeat; */
+  background: #f8f8f8;
+  position: relative;
+  z-index: 1;
+  max-width: 420px;
+  width: 100%;
+  margin: 0 auto;
+  /*font-family: 'OpenSans-Light', sans-serif;
+  font-size: 1em;
+  line-height: 3em;
+  color: #3d3d3d;*/
+  text-decoration: none;
+  /*-webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);*/
+  border: 1px solid #000;
+}
+
+.contact-page .wpcf7-form input,
+.contact-page .wpcf7-form textarea {
+  font-family: 'OpenSans-Light', sans-serif;
+  font-size: 12px;
+  line-height: 1;
+  color: #000;
+  border: none;
+  padding-left: 25px;
+  /*height: 40px;*/
+  width: 85%;
+  margin: 1.5em auto;
+  height:40px;
+  /*-webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);*/
+  border: 1px solid #000;
+  background: transparent;
+}
+
+.contact-page .wpcf7-form textarea {
+  height: 250px;
+  padding-top: 2em;
+}
+
+.contact-page .wpcf7-form-control.wpcf7-submit {
+  color: #000;
+  text-transform: uppercase;
+  padding-left: 5px;
+  border-radius: 0;
+}
+
+.wpcf7-not-valid-tip {
+  display: block;
+  color: red;
+  margin-bottom: -50px;
+}
+
+.wpcf7-response-output.wpcf7-validation-errors {
+  line-height: 1.5;
+  padding: 1em;
+  font-size: 12px;
+  color: red;
+}
+
+.screen-reader-response {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+*** HELPER CLASSES
+*/
+.position-relative {
+  position: relative;
+}
+
+.z-1 {
+  z-index: 1
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.margin-top-0_75 {
+  margin-top: 0.75em;
+}
+
+
+
+
+@media (min-width: 1200px){
+
+.container {
+    width: 1080px;
+}
+
+.container.fixed .row {
+    width: 1080px;
+    margin: 0 auto;
+}
+
+.container.fixed {
+    width: 100%;
+}
+
+}
+
+@media (max-width: 767px){
+
+h2 {
+  font-size: 1.15em;
+}
+
+.banner h1 {
+  padding: 50px 10px 0 10px;
+  font-size: 1.15em;
+}
+
+.banner h2 {
+  padding: 50px 0 0 0;
+  font-size: 1em;
+}
+
+.banner button {
+  margin: 0;
+  font-size: 0.75em;
+}
+
+.browser {
+  float: none;
+  margin: 0 auto 40px auto;
+}
+
+.offer-javascript-services .text-right {
+  text-align: left;
+}
+
+.screens {
+  height: 170px;
+  background-size: 50%;
+  background-position: 80% 100%;
+}
+
+.browser {
+  width: 100%;
+  height: 110px;
+  background-size: 50%;
+  background-position: 50% 50%;
+}
+
+.customize-support header.fixed {
+    top: 0;
+}
+
+.image-grid .gallery-img {
+  float: left;
+  width: 99%;
+  margin: 0.5%;
+}
+
+.offer-3-cols {
+  height: 1100px !important;
+}
+
+footer .footer-menu-list li a {
+  margin: 0 10px;
+}
+
+footer .footer-social {
+  margin-top: 25px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.reference .gallery {
+  display: block;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

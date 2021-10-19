@@ -1,0 +1,32 @@
+RewriteEngine On
+
+RewriteOptions inherit
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^index\.php$ - [L]
+ RewriteCond %{REQUEST_URI} !/(wp-content/uploads/.*)$
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+
+RewriteCond %{HTTP_HOST} ^instalaterwenzel\.marekmelichar\.cz$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.instalaterwenzel\.marekmelichar\.cz$
+RewriteRule ^/?$ "https\:\/\/instalaterwenzel\.cz" [R=301,L]
+
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+
+RewriteCond %{SERVER_PORT} 80
+RewriteCond %{HTTP_HOST} ^instalaterwenzel\.cz$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.instalaterwenzel\.cz$
+RewriteRule ^(.*)$ https://instalaterwenzel.cz/$1 [R,L]

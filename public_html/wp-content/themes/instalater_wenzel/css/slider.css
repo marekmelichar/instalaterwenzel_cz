@@ -1,0 +1,145 @@
+#full-width-slider * {
+    margin: 0;
+    padding: 0;
+}
+
+#full-width-slider img {
+    vertical-align: middle;
+    border: 0;
+}
+
+#full-width-slider ul,
+#full-width-slider #next,
+#full-width-slider #prev {
+    list-style: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#full-width-slider li {
+    float: left;
+    background: #f8f8f8;
+}
+
+#full-width-slider li,
+#full-width-slider li img,
+#full-width-slider #next,
+#full-width-slider #prev {
+    width: 426px;
+    height: 359px;
+}
+
+#full-width-slider li img {
+    opacity: 0.4;
+}
+
+#full-width-slider {
+  margin-bottom: 50px;
+  overflow: hidden;
+  background: #f8f8f8;
+}
+
+#full-width-slider #centeringDiv {
+    width: 426px;
+    height: 359px;
+    margin: 50px auto;
+    position: relative;
+}
+
+#full-width-slider #current {
+    width: 426px;
+    height: 359px;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+}
+
+#full-width-slider #current p {
+    width: 1278px;
+    position: relative;
+    left: -426px;
+}
+
+#full-width-slider #current img {
+    position: absolute;
+    left: 426px;
+}
+
+#full-width-slider #next,
+#full-width-slider #prev {
+    z-index: 5;
+    cursor: pointer;
+}
+
+#full-width-slider #next .icon,
+#full-width-slider #prev .icon {
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: #394E6B;
+  color: #f8f8f8;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 15px #000;
+  -moz-box-shadow: 0 0 15px #000;
+  box-shadow: 0 0 15px #000;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  font-size: 2em;
+  text-align: center;
+}
+
+#full-width-slider #prev {
+    left: -426px;
+}
+
+#full-width-slider #next {
+    left: 426px;
+}
+
+#full-width-slider h2 {
+  text-transform: uppercase;
+  font-weight: 800;
+  text-align: center;
+  margin-top: 1.5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 767px){
+
+#full-width-slider #prev {
+  left: -50%;
+transform: translateX(35px);
+}
+
+#full-width-slider #next {
+  left: 50%;
+    transform: translateX(-141px);
+}
+
+#full-width-slider ul {
+  display: none;
+}
+
+#full-width-slider #current {
+  width: 72%;
+}
+
+
+
+}
+/*#full-width-slider {
+  display: none;
+}*/
